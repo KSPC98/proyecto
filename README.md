@@ -31,7 +31,7 @@ El aplicativo ofrece las siguientes funcionalidades clave:
     cd proyecto
     ```
 2.  **Configurar la Base de Datos:**
-    * El proyecto utiliza MySQLite. Asegúrate de que el archivo de la base de datos (ej. `database.db`) esté en la ruta correcta o se cree si no existe.
+    * El proyecto utiliza MySQL. Asegúrate de que el archivo de la base de datos (ej. `database.db`) esté en la ruta correcta o se cree si no existe.
     * La estructura de la tabla `libros` es la siguiente:
         ```sql
         CREATE TABLE libros (
