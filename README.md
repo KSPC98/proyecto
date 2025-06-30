@@ -1,9 +1,9 @@
-# Sistema de Gestión de Libros
+# proyecto - Sistema de Gestión de Libros
 
-**Datos:**
-* kevin Sebastian Pérez Cervantes
+**Datos del Grupo:**
+* Kevin Sebastian Perez Cervantes
 
-[cite_start]**Fecha:** 29 de junio de 2025 [cite: 1]
+**Fecha:** 29 de junio de 2025
 
 ---
 
@@ -27,15 +27,13 @@ El aplicativo ofrece las siguientes funcionalidades clave:
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
-    cd tu-repositorio-del-proyecto
+    git clone [https://github.com/tu-usuario/proyecto.git](https://github.com/tu-usuario/proyecto.git)
+    cd proyecto
     ```
 2.  **Configurar la Base de Datos:**
-    * El proyecto utiliza [Tipo de Base de Datos, ej. SQLite]. Asegúrate de que el archivo de la base de datos (ej. `database.db`) esté en la ruta correcta o se cree si no existe.
+    * El proyecto utiliza SQLite. Asegúrate de que el archivo de la base de datos (ej. `database.db`) esté en la ruta correcta o se cree si no existe.
     * La estructura de la tabla `libros` es la siguiente:
         ```sql
-        -- Pegar aquí tu sentencia CREATE TABLE para la tabla libros
-        -- Ejemplo para SQLite:
         CREATE TABLE libros (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             titulo TEXT NOT NULL,
@@ -70,9 +68,9 @@ El aplicativo ofrece las siguientes funcionalidades clave:
 * **Go (Golang):** Lenguaje de programación principal.
 * **Gorilla Mux:** Enrutador HTTP para Go.
 * **HTML/CSS:** Para la interfaz de usuario.
-* **[Tipo de Base de Datos, ej. SQLite3]:** Base de datos.
+* **SQLite3:** Base de datos.
 * **JSON:** Para la serialización de datos en los servicios web.
 
 ## 🔗 Enlaces de Interés
 
-* Repositorio de GitHub: `[https://github.com/tu-usuario/tu-repositorio.git]`
+* Repositorio de GitHub: `https://github.com/KSPC98/proyecto.git` 
