@@ -1,0 +1,38 @@
+{{ define "content" }}
+<div class="dashboard-header"> <h2>Lista de Libros</h2>
+</div>
+
+<div class="card p-20"> <a href="/libros/crear" class="btn btn-primary mb-20">Crear Nuevo Libro</a> {{ if . }}
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Año Publicación</th>
+                <th>Editorial</th>
+                <th>Prestado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range . }}
+            <tr>
+                <td>{{ .Id }}</td>
+                <td>{{ .Titulo }}</td>
+                <td>{{ .Autor }}</td>
+                <td>{{ .AnioPublicacion }}</td>
+                <td>{{ .Editorial }}</td>
+                <td>{{ .Prestado }}</td>
+                <td>
+                    <a href="/libros/editar/{{ .Id }}" class="btn btn-edit">Editar</a>
+                    <a href="/libros/eliminar/{{ .Id }}" class="btn btn-delete" onclick="return confirm('¿Estás seguro de que quieres eliminar este libro?');">Eliminar</a>
+                </td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+    {{ else }}
+        <p class="empty-state-message">No hay libros registrados aún.</p> {{ end }}
+</div>
+{{ end }}

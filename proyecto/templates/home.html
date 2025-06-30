@@ -1,0 +1,22 @@
+{{ define "content" }}
+<div class="dashboard-header">
+    <h2>Dashboard</h2>
+</div>
+
+<div class="dashboard-grid">
+    <div class="card bg-purple dashboard-info-card">
+        <i class="material-icons card-icon">book</i>
+        <div class="card-content">
+            <span class="card-title">Total de Libros</span>
+            <span class="card-value">{{ .TotalBooks }}</span>
+        </div>
+    </div>
+    <div class="card bg-green dashboard-info-card">
+        <i class="material-icons card-icon">check_circle</i>
+        <div class="card-content">
+            <span class="card-title">Libros Disponibles</span>
+            <span class="card-value">{{ .AvailableBooks }}</span>
+        </div>
+    </div>
+    </div>
+{{ end }}

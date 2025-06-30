@@ -1,0 +1,35 @@
+{{ define "base" }}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Libros</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-left">
+                <i class="material-icons menu-icon">library_books</i> <span class="app-title">SISTEMA DE GESTION DE LIBROS</span> </div>
+            </header>
+
+        <aside class="sidebar">
+            <div class="user-profile uide-placeholder"> UIDE </div>
+            <nav class="main-navigation">
+                <h3>OPCIONES</h3> <ul>
+                    <li><a href="/" class="nav-item active"><i class="material-icons">dashboard</i> Dashboard</a></li>
+                    <li><a href="/libros" class="nav-item"><i class="material-icons">menu_book</i> Listar Libros</a></li>
+                    <li><a href="/libros/crear" class="nav-item"><i class="material-icons">add_box</i> Crear Nuevo Libro</a></li>
+                    </ul>
+            </nav>
+        </aside>
+
+        <main class="content-area">
+            {{ block "content" . }}{{ end }}
+        </main>
+    </div>
+</body>
+</html>
+{{ end }}
